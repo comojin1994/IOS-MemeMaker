@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="memeMaker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="Qjm-XI-5gZ">
+                                <rect key="frame" x="20" y="59.666666666666686" width="374" height="777"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오늘 뭐하🐶?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zbH-Bi-ulQ">
+                                        <rect key="frame" x="120.33333333333336" y="0.0" width="133.66666666666663" height="131"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="oOL-Pd-cEN">
+                                        <rect key="frame" x="18.666666666666657" y="157" width="337" height="620"/>
+                                        <subviews>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="PZW-H8-omm">
+                                                <rect key="frame" x="112" y="0.0" width="113" height="32"/>
+                                                <segments>
+                                                    <segment title="🌸"/>
+                                                    <segment title="🍻"/>
+                                                    <segment title="🍰"/>
+                                                </segments>
+                                                <connections>
+                                                    <action selector="segmentTopChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="eTP-mS-3hm"/>
+                                                </connections>
+                                            </segmentedControl>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6pI-OB-3HK">
+                                                <rect key="frame" x="142.66666666666669" y="98.000000000000028" width="51.333333333333343" height="24"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ehk-St-eWR">
+                                                <rect key="frame" x="0.0" y="189" width="337" height="242"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="337" id="Mjb-Te-x7F"/>
+                                                    <constraint firstAttribute="height" constant="242" id="qQB-uo-liI"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vss-X6-Gid">
+                                                <rect key="frame" x="142.66666666666669" y="498" width="51.333333333333343" height="24"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="s75-pe-MGW">
+                                                <rect key="frame" x="112" y="589" width="113" height="32"/>
+                                                <segments>
+                                                    <segment title="🤡"/>
+                                                    <segment title="🏍"/>
+                                                    <segment title="💤"/>
+                                                </segments>
+                                                <connections>
+                                                    <action selector="segmentBottomChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="o6I-m1-we6"/>
+                                                </connections>
+                                            </segmentedControl>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="619.66999999999996" id="AOL-TY-Qn9"/>
+                                            <constraint firstItem="s75-pe-MGW" firstAttribute="centerX" secondItem="oOL-Pd-cEN" secondAttribute="centerX" id="IZN-GO-d08"/>
+                                            <constraint firstItem="ehk-St-eWR" firstAttribute="centerY" secondItem="oOL-Pd-cEN" secondAttribute="centerY" id="Ino-0n-69w"/>
+                                            <constraint firstItem="Vss-X6-Gid" firstAttribute="centerY" secondItem="oOL-Pd-cEN" secondAttribute="centerY" constant="200" id="LrL-qF-YQr"/>
+                                            <constraint firstItem="6pI-OB-3HK" firstAttribute="centerX" secondItem="oOL-Pd-cEN" secondAttribute="centerX" id="NbR-oS-ztp"/>
+                                            <constraint firstItem="s75-pe-MGW" firstAttribute="centerY" secondItem="oOL-Pd-cEN" secondAttribute="centerY" constant="294.5" id="Q4z-p2-wwS"/>
+                                            <constraint firstItem="PZW-H8-omm" firstAttribute="centerX" secondItem="oOL-Pd-cEN" secondAttribute="centerX" id="T5p-yB-cI3"/>
+                                            <constraint firstItem="ehk-St-eWR" firstAttribute="centerX" secondItem="oOL-Pd-cEN" secondAttribute="centerX" id="UQ3-kO-pza"/>
+                                            <constraint firstItem="Vss-X6-Gid" firstAttribute="centerX" secondItem="oOL-Pd-cEN" secondAttribute="centerX" id="bKt-Ba-LrH"/>
+                                            <constraint firstAttribute="width" constant="337" id="mBE-d3-GgM"/>
+                                            <constraint firstItem="PZW-H8-omm" firstAttribute="centerY" secondItem="oOL-Pd-cEN" secondAttribute="centerY" constant="-294.5" id="tXe-j7-hg6"/>
+                                            <constraint firstItem="6pI-OB-3HK" firstAttribute="centerY" secondItem="oOL-Pd-cEN" secondAttribute="centerY" constant="-200" id="xNm-An-XYP"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="777" id="0zI-4h-tEp"/>
+                                    <constraint firstAttribute="width" constant="374" id="sY0-bK-DJd"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstItem="Qjm-XI-5gZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AYw-1L-8F1"/>
+                            <constraint firstItem="Qjm-XI-5gZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="JwZ-gE-w2U"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomLabel" destination="Vss-X6-Gid" id="OUm-52-PCB"/>
+                        <outlet property="puppyImage" destination="ehk-St-eWR" id="Geh-ts-Bmi"/>
+                        <outlet property="segmentBottom" destination="s75-pe-MGW" id="qFm-RX-ltI"/>
+                        <outlet property="segmentTop" destination="PZW-H8-omm" id="hth-FQ-Zlj"/>
+                        <outlet property="topLabel" destination="6pI-OB-3HK" id="Ne7-UR-cZf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23.188405797101453" y="118.52678571428571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
