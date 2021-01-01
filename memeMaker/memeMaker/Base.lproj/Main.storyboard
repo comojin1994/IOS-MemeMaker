@@ -16,96 +16,109 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="Qjm-XI-5gZ">
-                                <rect key="frame" x="20" y="59.666666666666686" width="374" height="777"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="bp6-gd-iGf">
+                                <rect key="frame" x="37" y="61" width="340" height="774"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오늘 뭐하🐶?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zbH-Bi-ulQ">
-                                        <rect key="frame" x="120.33333333333336" y="0.0" width="133.66666666666663" height="131"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오늘 뭐하🐶?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GhE-0r-REw">
+                                        <rect key="frame" x="89.666666666666671" y="0.0" width="160.66666666666663" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="160.66999999999999" id="07e-Ku-cef"/>
+                                            <constraint firstAttribute="height" constant="36" id="EI5-zH-FHt"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="oOL-Pd-cEN">
-                                        <rect key="frame" x="18.666666666666657" y="157" width="337" height="620"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7aM-rk-p67">
+                                        <rect key="frame" x="0.0" y="68" width="340" height="706"/>
                                         <subviews>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="PZW-H8-omm">
-                                                <rect key="frame" x="112" y="0.0" width="113" height="32"/>
-                                                <segments>
-                                                    <segment title="🌸"/>
-                                                    <segment title="🍻"/>
-                                                    <segment title="🍰"/>
-                                                </segments>
-                                                <connections>
-                                                    <action selector="segmentTopChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="eTP-mS-3hm"/>
-                                                </connections>
-                                            </segmentedControl>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6pI-OB-3HK">
-                                                <rect key="frame" x="142.66666666666669" y="98.000000000000028" width="51.333333333333343" height="24"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ehk-St-eWR">
-                                                <rect key="frame" x="0.0" y="189" width="337" height="242"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="ePJ-jF-u1t">
+                                                <rect key="frame" x="20" y="59.666666666666629" width="300" height="587"/>
+                                                <subviews>
+                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="53F-PZ-dZd">
+                                                        <rect key="frame" x="93.666666666666657" y="0.0" width="113" height="31.333333333333332"/>
+                                                        <segments>
+                                                            <segment title="🌸"/>
+                                                            <segment title="🍻"/>
+                                                            <segment title="🍰"/>
+                                                        </segments>
+                                                        <connections>
+                                                            <action selector="topSegmentChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="rpT-lk-GLQ"/>
+                                                        </connections>
+                                                    </segmentedControl>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXI-O3-j28">
+                                                        <rect key="frame" x="124.33333333333333" y="74.666666666666657" width="51.333333333333329" height="24.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pcW-1x-YCf">
+                                                        <rect key="frame" x="0.0" y="143.33333333333337" width="300" height="300"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="300" id="PP2-pj-viM"/>
+                                                            <constraint firstAttribute="height" constant="300" id="S4x-fP-xw5"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1XA-1X-LHp">
+                                                        <rect key="frame" x="124.33333333333333" y="487.66666666666674" width="51.333333333333329" height="24"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="I9J-uT-Ef3">
+                                                        <rect key="frame" x="93.666666666666657" y="555.66666666666674" width="113" height="32.333333333333371"/>
+                                                        <segments>
+                                                            <segment title="🤡"/>
+                                                            <segment title="🏍"/>
+                                                            <segment title="💤"/>
+                                                        </segments>
+                                                        <connections>
+                                                            <action selector="bottomSegmentChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="MiM-2Z-GNF"/>
+                                                        </connections>
+                                                    </segmentedControl>
+                                                </subviews>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="337" id="Mjb-Te-x7F"/>
-                                                    <constraint firstAttribute="height" constant="242" id="qQB-uo-liI"/>
+                                                    <constraint firstItem="oXI-O3-j28" firstAttribute="centerY" secondItem="ePJ-jF-u1t" secondAttribute="centerY" constant="-206.5" id="HLu-jV-5hB"/>
+                                                    <constraint firstItem="oXI-O3-j28" firstAttribute="centerX" secondItem="ePJ-jF-u1t" secondAttribute="centerX" id="IeI-RE-YHv"/>
+                                                    <constraint firstAttribute="height" constant="587" id="Kd3-0u-Z1x"/>
+                                                    <constraint firstItem="pcW-1x-YCf" firstAttribute="centerY" secondItem="ePJ-jF-u1t" secondAttribute="centerY" id="RiG-CH-RIh"/>
+                                                    <constraint firstAttribute="width" constant="300" id="Yqx-pk-Tp5"/>
+                                                    <constraint firstItem="1XA-1X-LHp" firstAttribute="centerY" secondItem="ePJ-jF-u1t" secondAttribute="centerY" constant="206.16999999999999" id="f9q-Bt-pEJ"/>
+                                                    <constraint firstItem="1XA-1X-LHp" firstAttribute="centerX" secondItem="ePJ-jF-u1t" secondAttribute="centerX" id="mCc-Kd-Rm9"/>
+                                                    <constraint firstItem="pcW-1x-YCf" firstAttribute="centerX" secondItem="ePJ-jF-u1t" secondAttribute="centerX" id="obR-Ri-mOV"/>
                                                 </constraints>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vss-X6-Gid">
-                                                <rect key="frame" x="142.66666666666669" y="498" width="51.333333333333343" height="24"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="s75-pe-MGW">
-                                                <rect key="frame" x="112" y="589" width="113" height="32"/>
-                                                <segments>
-                                                    <segment title="🤡"/>
-                                                    <segment title="🏍"/>
-                                                    <segment title="💤"/>
-                                                </segments>
-                                                <connections>
-                                                    <action selector="segmentBottomChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="o6I-m1-we6"/>
-                                                </connections>
-                                            </segmentedControl>
+                                            </stackView>
                                         </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="619.66999999999996" id="AOL-TY-Qn9"/>
-                                            <constraint firstItem="s75-pe-MGW" firstAttribute="centerX" secondItem="oOL-Pd-cEN" secondAttribute="centerX" id="IZN-GO-d08"/>
-                                            <constraint firstItem="ehk-St-eWR" firstAttribute="centerY" secondItem="oOL-Pd-cEN" secondAttribute="centerY" id="Ino-0n-69w"/>
-                                            <constraint firstItem="Vss-X6-Gid" firstAttribute="centerY" secondItem="oOL-Pd-cEN" secondAttribute="centerY" constant="200" id="LrL-qF-YQr"/>
-                                            <constraint firstItem="6pI-OB-3HK" firstAttribute="centerX" secondItem="oOL-Pd-cEN" secondAttribute="centerX" id="NbR-oS-ztp"/>
-                                            <constraint firstItem="s75-pe-MGW" firstAttribute="centerY" secondItem="oOL-Pd-cEN" secondAttribute="centerY" constant="294.5" id="Q4z-p2-wwS"/>
-                                            <constraint firstItem="PZW-H8-omm" firstAttribute="centerX" secondItem="oOL-Pd-cEN" secondAttribute="centerX" id="T5p-yB-cI3"/>
-                                            <constraint firstItem="ehk-St-eWR" firstAttribute="centerX" secondItem="oOL-Pd-cEN" secondAttribute="centerX" id="UQ3-kO-pza"/>
-                                            <constraint firstItem="Vss-X6-Gid" firstAttribute="centerX" secondItem="oOL-Pd-cEN" secondAttribute="centerX" id="bKt-Ba-LrH"/>
-                                            <constraint firstAttribute="width" constant="337" id="mBE-d3-GgM"/>
-                                            <constraint firstItem="PZW-H8-omm" firstAttribute="centerY" secondItem="oOL-Pd-cEN" secondAttribute="centerY" constant="-294.5" id="tXe-j7-hg6"/>
-                                            <constraint firstItem="6pI-OB-3HK" firstAttribute="centerY" secondItem="oOL-Pd-cEN" secondAttribute="centerY" constant="-200" id="xNm-An-XYP"/>
+                                            <constraint firstAttribute="height" constant="706" id="D4i-if-nXy"/>
+                                            <constraint firstItem="ePJ-jF-u1t" firstAttribute="centerX" secondItem="7aM-rk-p67" secondAttribute="centerX" id="L2z-ph-K9J"/>
+                                            <constraint firstAttribute="width" constant="340" id="MKT-9Z-hQE"/>
+                                            <constraint firstItem="ePJ-jF-u1t" firstAttribute="centerY" secondItem="7aM-rk-p67" secondAttribute="centerY" id="isE-Iq-SA2"/>
                                         </constraints>
-                                    </stackView>
+                                    </view>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="777" id="0zI-4h-tEp"/>
-                                    <constraint firstAttribute="width" constant="374" id="sY0-bK-DJd"/>
+                                    <constraint firstItem="GhE-0r-REw" firstAttribute="centerX" secondItem="bp6-gd-iGf" secondAttribute="centerX" id="3h7-XT-pC7"/>
+                                    <constraint firstItem="GhE-0r-REw" firstAttribute="centerY" secondItem="bp6-gd-iGf" secondAttribute="centerY" constant="-369" id="9dy-Mz-DH6"/>
+                                    <constraint firstItem="7aM-rk-p67" firstAttribute="centerX" secondItem="bp6-gd-iGf" secondAttribute="centerX" id="Bg2-A0-yrd"/>
+                                    <constraint firstItem="7aM-rk-p67" firstAttribute="centerY" secondItem="bp6-gd-iGf" secondAttribute="centerY" constant="34" id="nEY-sS-b89"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                         <constraints>
-                            <constraint firstItem="Qjm-XI-5gZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AYw-1L-8F1"/>
-                            <constraint firstItem="Qjm-XI-5gZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="JwZ-gE-w2U"/>
+                            <constraint firstItem="bp6-gd-iGf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DLB-SM-jji"/>
+                            <constraint firstItem="bp6-gd-iGf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="FPy-1m-OV1"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="bottomLabel" destination="Vss-X6-Gid" id="OUm-52-PCB"/>
-                        <outlet property="puppyImage" destination="ehk-St-eWR" id="Geh-ts-Bmi"/>
-                        <outlet property="segmentBottom" destination="s75-pe-MGW" id="qFm-RX-ltI"/>
-                        <outlet property="segmentTop" destination="PZW-H8-omm" id="hth-FQ-Zlj"/>
-                        <outlet property="topLabel" destination="6pI-OB-3HK" id="Ne7-UR-cZf"/>
+                        <outlet property="bottomLabel" destination="1XA-1X-LHp" id="Q0X-yc-pCW"/>
+                        <outlet property="bottomSegment" destination="I9J-uT-Ef3" id="nFQ-Sm-Chk"/>
+                        <outlet property="puppyImg" destination="pcW-1x-YCf" id="kKn-lY-oZw"/>
+                        <outlet property="topLabel" destination="oXI-O3-j28" id="AUi-Y6-wdi"/>
+                        <outlet property="topSegment" destination="53F-PZ-dZd" id="0gF-zw-P22"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -114,6 +127,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
